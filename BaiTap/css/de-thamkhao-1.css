@@ -1,0 +1,176 @@
+* {
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #ccc;
+}
+
+div.container{
+  width: 900px;
+  background-color: #00ddff;
+  color: white;
+}
+
+div.clear{
+  clear: both;
+}
+
+
+header {
+  width: 100%;
+  border-bottom: 5px dotted white;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+}
+
+header nav.menu ul.cap1{
+  list-style-type: none;
+  font-size: 21px;
+}
+
+header nav.menu ul.cap1 > li{
+  width: 110px;
+  float: left;
+  text-align: center;
+  color: white;
+  padding: 10px 0 5px 0;
+}
+
+header nav.menu ul.cap1 > li a{
+  color: white;
+  font-size: 21px;
+}
+
+header nav.menu ul.cap1 >li#logo{
+  float: right;
+  width: 300px;
+  text-shadow: 6px 0px 3px blue;
+}
+
+header nav ul.cap1 > li#logo > a{
+  font-size: 30px;
+}
+
+header nav .cap1 > li:hover .cap2{
+  display: block;
+  position: absolute;
+}
+
+header nav div.clear{
+  clear: both;
+}
+
+header a{
+  text-decoration: none;
+} 
+/* ========== */
+
+header nav .cap1 .cap2{
+  display: none;
+}
+
+header nav ul.cap1 .cap2 > li{
+  text-decoration: none;
+  list-style-type: none;
+  width: 250px;
+  text-align: left;
+  display: block;
+  background-color: blue;
+  padding: 5px 15px 0 15px;
+}
+
+header nav .cap1 .cap2 > li:hover{
+  font-weight: bolder;
+  background-color: green;
+}
+/* ========== */
+
+section{
+  width: 100%;
+  padding: 30px 15px 25px 30px; 
+  display: block;
+  border-bottom: 5px dotted white;
+}
+
+section article.noidung1{
+  width: 420px;
+  float: left;
+  color: white;
+}
+
+section article.noidung1 img{
+  width: 410px;
+  height: 250px;
+}
+
+section article.noidung1 > p#text1{
+  font-size: 30px;
+  text-shadow: 2px 2px 1px white;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+section article.noidung1 > p#text2{
+  font-size: 20px;
+  padding: 5px 0 0 20px;
+  color: #EEEEEE;
+}
+
+section article.noidung2{
+  width: 420px;
+  float: right;
+}
+
+section article.noidung2 form > h2{
+  padding-bottom: 10px;
+}
+
+section article.noidung2 form > p{
+  padding-bottom: 10px;
+}
+
+section .noidung2 table{
+  padding-left: 20px;
+}
+
+section .noidung2 .txtInput{
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 230px;
+}
+
+section .noidung2 .btn{
+  border: 1px dashed blue;
+  border-radius: 5px;
+  padding: 1px 3px 1px 3px;
+}
+
+section .noidung2 select{
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+/* =============================== */
+
+footer{
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+footer > p#text1{
+  font-weight: bolder;
+}
+
+footer #text2 > span{
+  font-weight: bolder;
+  font-style: italic;
+}
+
+footer #text2 span > a{
+  color: white;
+  text-decoration: none;
+}

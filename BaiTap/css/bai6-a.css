@@ -1,0 +1,19 @@
+table{
+    width: 30%;
+    border: 10px solid gold;
+    text-align: center;
+    font-weight: bolder;
+    background-color: white;
+}
+td{
+    height: 70px;
+    border: 2px solid #33FFFF;
+}
+
+#ID-4, #ID-5, #ID-7, #ID-8{
+    background-color: orange;
+}
+
+#ID-6, #ID-9, #ID-10{
+    background-color: yellow;
+}

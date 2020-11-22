@@ -1,0 +1,16 @@
+. {
+  margin: 0 auto;
+  padding: 1px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+}
+
+#area1 {
+  border: 3px solid black;
+}
+
+#area2 {
+  border: 3px solid black;
+}

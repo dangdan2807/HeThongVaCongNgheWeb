@@ -1,0 +1,35 @@
+body{
+    text-align: left;
+}
+
+div{
+    float: left;
+}
+
+.table1{
+    border: 0px solid white;
+    background-color: #FFCC66;
+    float: left;
+}
+
+.table2{
+    margin-left: 50px;
+    float: left;
+    background-color: white;
+    padding: 15px;
+}
+
+th, td{
+    border: 1px solid black;
+    text-align: left;
+}
+
+span{
+    color: crimson;
+    text-decoration: underline;
+}
+
+#id4{
+    padding-left: 25px;
+    padding-right: 25px;
+}

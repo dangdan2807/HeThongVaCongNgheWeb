@@ -1,0 +1,94 @@
+. {
+    margin: auto 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee !important;
+}
+
+div.container {
+    height: 600px;
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.clear {
+    clear: both;
+}
+/* ======================================= */
+
+header {
+    height: 80px;
+    border: 1px solid black;
+}
+
+header h2 {
+    padding: 0 0 0 20px;
+}
+
+/* ========================================= */
+
+div.row {
+    padding: 0 15px 0 15px;
+}
+
+nav {
+    border: 1px solid black;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li > a {
+    text-decoration: none;
+}
+
+nav ul li > a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+div.left {
+    border: 1px solid black;
+}
+
+aside.right {
+    border: 1px solid black;
+}
+
+section.col-lg-6 {
+    border: 1px solid black;
+    height: 500px auto;
+}
+
+section form {
+    padding: 20px 0 20px 0;
+}
+
+section label {
+    text-align: left !important;
+}
+
+section .error {
+    color: red;
+    font-style: italic;
+}
+
+section .inputDisabled {
+    margin-top: 15px;
+}
+
+section .btn-DangKy {
+    margin-top: 10px;
+}
+
+footer {
+    border: 1px solid black;
+    height: 50px;
+}
+
+/* ===================== Modal*/

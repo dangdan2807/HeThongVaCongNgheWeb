@@ -1,0 +1,40 @@
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ccc !important;
+}
+
+div.container {
+    background-color: white;
+}
+
+header{
+    width: auto;
+    border: 1px solid black;
+    padding-left: 15px;
+}
+
+.left , .right {
+    border: 1px solid black;
+    height: auto;
+}
+aside{
+    border: 1px solid black;
+}
+
+div.row{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label.loaiHinh{
+    text-align: left;
+    padding-left: 0px;
+}
+
+.error{
+    color: red;
+}

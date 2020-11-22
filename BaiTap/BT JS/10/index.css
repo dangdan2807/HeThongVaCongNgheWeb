@@ -1,0 +1,20 @@
+. {
+  margin: 0 auto;
+  padding: 1px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+}
+
+div.container{
+  text-align: center;
+}
+
+form input{
+  font-size: 40px;
+}
+
+form textarea{
+  font-size: 40px;
+}

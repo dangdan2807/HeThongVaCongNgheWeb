@@ -1,0 +1,185 @@
+. {
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #cccccc;
+}
+
+div.container {
+  width: 1000px;
+  background-color: white;
+  margin: 0 200px 0 200px;
+}
+
+div.clear {
+  clear: both;
+}
+
+/* ================================== */
+
+header {
+  width: 100%;
+  padding-top: 10px;
+  background-color: darkcyan;
+  color: white;
+}
+
+header #logo {
+  width: 40%;
+  float: left;
+}
+
+header #logo > img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  padding: 0 5px 0 5px;
+}
+
+header #logo > span#text1 {
+  font-size: 35px;
+}
+
+header #logo > p#text2 {
+  font-size: 17px;
+}
+
+header #search-nav {
+  width: 59%;
+  float: right;
+  padding: 0px 10px 0 0;
+  margin-top: -10px;
+}
+
+header #search-nav #row1 {
+  text-align: end;
+  padding-top: 10px;
+}
+
+header input {
+  border: 1px solid cornflowerblue;
+  background-color: darkblue;
+  color: white;
+}
+
+header input#search::-webkit-input-placeholder {
+  color: white;
+}
+
+header #row2 {
+  width: 100%;
+  text-align: start;
+}
+
+header #row2 li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+header #row2 li {
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  margin: 15px 0 0px 10px;
+  background-color: blue;
+}
+
+/* ================================ */
+
+section {
+  padding: 0px 10px 0 10px;
+  color: darkcyan;
+}
+
+section #tieude {
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: darkcyan;
+  border-bottom: 3px dotted darkcyan;
+}
+
+section article {
+  float: left;
+  width: 67%;
+}
+
+section article form input {
+  background-color: #f1f1f1;
+  border: 1px solid darkcyan;
+}
+
+section article form textarea {
+  background-color: #f1f1f1;
+  border: 1px solid darkcyan;
+}
+
+section article form #btn-reset {
+  margin-left: 10px;
+}
+
+section article form p {
+  color: red;
+  text-shadow: 5px 5px 5px darkcyan;
+}
+
+section #aside-con {
+  float: right;
+  width: 32%;
+}
+
+section #aside-con #tieude2 {
+  border-bottom: 3px dotted darkcyan;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+section aside#aside-right {
+  float: right;
+  width: 30%;
+  margin-top: 20px;
+  background-color: #e6e6fa;
+  padding: 10px 10px 20px 10px;
+}
+
+section #aside-right #tieude3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: darkcyan;
+  border-bottom: 3px dashed darkcyan;
+}
+
+section #aside-right img {
+  width: 320px;
+  height: 150px;
+}
+
+section #aside-right #text {
+  color: black;
+}
+
+section #aside-right a {
+  float: right;
+  font-weight: bolder;
+  color: 20px;
+  text-decoration: none;
+}
+
+/* =============================== */
+
+footer {
+  background-color: #483d8b;
+  padding: 5px 5px 5px 15px;
+}
+footer #text1 {
+  color: white;
+}
+footer #text2{
+  color: #ccc;
+}

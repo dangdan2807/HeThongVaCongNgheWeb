@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="desscription" content="Free Web totorials" />
+    <meta name="keywords" content="HTML, CSS, XML, Javascript" />
+    <meta name="author" content="Hege Refsnes" />
+    <title>Bai 15A</title>
+    <link rel="stylesheet" type="text/css" href="../css/bai15-a.css" />
+  </head>
+
+  <body></body>
+  <div id="content" class="container">
+    <fieldset>
+      <legend>Your message:</legend>
+      <table>
+        <tr>
+          <td><label for="emailTo">To:</label></td>
+          <td>
+            <input type="text" name="txtTo" id="emailTo" readonly="readonly" size="20" placeholder="Example Cafe"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="emailFrom">Your email</label></td>
+          <td>
+            <input type="text" name="txtFrom" id="emailFrom" size="20" tabindex="1" maxlength="250"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="emailBody">Message</label></td>
+          <td>
+            <textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>How you found us:</legend>
+      <table>
+        <tr>
+          <td><label for="list">How did you hear of us?</label></td>
+          <td>
+            <select>
+              <option value="google">Google</option>
+              <option value="facebook">Facebook</option>
+              <option value="youtube">Youtube</option>
+              <option value="Khac">Khác</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="checkbox">Newsletter</label></td>
+          <td>
+            <input type="checkbox" name="checkbox" id="checkbox" checked/>
+            <span>
+              Ensure this box is checked if you would like to receive email
+              updates</span>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </div>
+</html>

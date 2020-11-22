@@ -1,0 +1,25 @@
+* {
+  margin: 0 auto;
+  padding: 1px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+}
+
+div.container{
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+input{
+  font-size: 30px;
+  margin-top: 10px;
+  width: 90%;
+}

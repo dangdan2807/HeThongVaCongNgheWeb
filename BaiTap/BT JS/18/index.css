@@ -1,0 +1,100 @@
+* {
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ccc !important;
+}
+
+div.container {
+    line-height: 1 !important;
+}
+
+div.clear {
+    clear: both;
+    width: 0;
+    height: 0;
+}
+/* =========================================== */
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+}
+
+header > div#logo {
+    color: white;
+    font-weight: bolder;
+    font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+    text-anchor: start;
+    font-size: 40px;
+    margin: 20px 0 0px 10px;
+    width: 20%;
+    float: left;
+}
+
+header div#logo a {
+    text-decoration: none;
+    color: white;
+}
+
+header > div#dang-nhap {
+    width: 79%;
+    float: right;
+    height: 100%;
+}
+
+header > div#dang-nhap table {
+    float: right;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+header > div#dang-nhap table td {
+    padding: 3px 0 0 10px;
+    color: white;
+}
+
+header div#dang-nhap table td #quenmk,
+header div#dang-nhap table td #text-check-login {
+    text-decoration: none;
+    color: #ccc;
+}
+/* =========================================== */
+section {
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    /* background-color: #dee9fdef; */
+    background-color: #E9EBEE;
+}
+
+article {
+    height: 100%;
+}
+
+section #art1 {
+    width: 26%;
+    float: left;
+    text-align: center;
+}
+
+section #art1 p {
+    font-size: 40px;
+    padding-top: 30px;
+    color: #1877f2;
+}
+
+section #art2 {
+    width: 74%;
+    float: right;
+}
+
+/* ================================================ */
+footer {
+    height: 50px;
+    width: 100%;
+    border: 1px solid blueviolet;
+}

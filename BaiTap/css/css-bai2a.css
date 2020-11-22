@@ -1,0 +1,48 @@
+. {
+  margin: 0 auto;
+  padding: 1px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+}
+
+div{
+  width: 460px;
+  height: auto;
+  background-color: white;
+  padding: 10px;
+}
+
+p#line1{
+  color: red;
+  text-indent: 10%;
+}
+p#line2{
+  text-align: right;
+  color: blue;
+}
+p#line3{
+  text-align: center;
+  color: green;
+}
+p#line4{
+  color: palevioletred;
+}
+p#line5{
+  text-decoration: underline;
+  color: pink;
+}
+p#line6{
+  text-decoration: line-through;
+  color: blueviolet;
+}
+p#line7{
+  text-decoration: overline;
+  color: red;
+}
+p#line8{
+  text-decoration: blink;
+  text-shadow: 4px 4px 8px blue;
+  color: blue;
+}

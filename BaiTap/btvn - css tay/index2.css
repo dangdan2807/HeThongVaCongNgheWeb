@@ -1,0 +1,128 @@
+* {
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+}
+
+div.container{
+  background-color: white;
+}
+
+div.clear{
+  clear: both;
+}
+/* ======================== */
+header{
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  color: black;
+  border: 1px solid black;
+}
+
+header p{
+  text-align: center;
+}
+
+/* ======================= */
+nav{
+  width: 20%;
+  border: 1px solid black;
+  float: left;
+}
+
+nav .cap1{
+  text-align: center;
+}
+
+nav .cap1 > li{
+  list-style-type: none;
+}
+
+nav .cap1 > li a{
+  text-decoration: none;
+}
+
+/* ======================= */
+
+section{
+  width: 60%;
+  border: 1px solid black;
+  float: left;
+  height: 500px auto;
+  padding-bottom: 10px;
+}
+
+section form{
+  padding: 10px 0 0 0;
+}
+
+section table{
+  width: 95%;
+}
+
+section table#table-showInfo{
+  border: 1px solid black;
+  text-align: center;
+}
+
+section table#table-showInfo td, th{
+  border : 1px solid black;
+}
+
+section td{
+  height: 10px;
+  padding: 2px;
+  text-align: left;
+}
+
+section #tdDisabled{
+  padding: 20px 0 2px 0;
+}
+
+section .text-input{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+section td span{
+  color: red;
+}
+
+section label{
+  font-weight: bold;
+}
+
+section input#btn-DangKy{
+  width: 100px;
+  height: 35px;
+  color: white;
+  background-color: mediumturquoise ;
+  border: 0px;
+  border-radius: 4px;
+}
+/* ======================= */
+aside{
+  width: 20%;
+  border: 1px solid black;
+  float: right;
+  height: 100%;
+}
+
+aside img{
+  width: 100%;
+  height: 100%;
+}
+
+/* ======================= */
+
+footer{
+  border : 1px solid black;
+  width: 100%;
+  height: 50px;
+}

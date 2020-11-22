@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, XML, Javascript">
+    <meta name="author" content="Here Refines">
+    <title>Bai 17</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="../../FrameWork/line-awesome/css/line-awesome.css" />
+    <link rel="stylesheet" href="../../FrameWork/line-awesome/css/line-awesome.min.css " />
+    <link rel="stylesheet" href="../../FrameWork/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../../FrameWork/bootstrap-3.3.7/css/bootstrap.min.css">
+
+    <script src="index.js" language="Javascript" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="content" class="container">
+        <h2 id="title">Đăng kí tài khoản</h2>
+        <form action="#">
+            <table>
+                <tr>
+                    <td><label for="user">Tên Đăng Nhập:</label></td>
+                    <td class="input">
+                        <input class="txtInput" type="text" name="user" id="user" placeholder="Nhập vào tên đăng nhập" onblur="check(1);">
+                        <span id="error1" class="error">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Mật khẩu:</label></td>
+                    <td class="input">
+                        <input class="txtInput" type="password" name="password" id="password" placeholder="Nhập vào mật khẩu" onblur="check(2);">
+                        <span id="error2" class="error">*</span>   
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="rePassword">Nhập lại mật khẩu:</label></td>
+                    <td class="input">
+                        <input class="txtInput" type="password" name="rePassword" id="rePassword" placeholder="Nhập vào lại xác nhận mật khẩu" onblur="checkPassword();">
+                        <span id="error3" class="error">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="td-title" colspan="2"><h5 id="title-info">THÔNG TIN CÁ NHÂN</h5></td>
+                </tr>
+                <tr>
+                    <td><label for="fullName">Họ và Tên:</label></td>
+                    <td class="input">
+                        <input class="txtInput" type="text" name="fullName" id="fullName" placeholder="Nhập vào học và tên (bắt buộc nhập)" onblur="check(4);">
+                        <span id="error4" class="error">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="birth">Ngày sinh:</label></td>
+                    <td class="input">
+                        <input type="date" name="birth" id="birth">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Giới tính:</label></td>
+                    <td class="input">
+                        <input type="radio" name="gender" id="gender" value="man" checked="checked">Nam 
+                        <input type="radio" name="gender" id="gender" value="women">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Địa chỉ:</label></td>
+                    <td class="input">
+                        <input class="txtInput" type="text" name="address" id="address" placeholder="Nhập vào địa chỉ">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Số điện thoại:</label></td>
+                    <td class="input">
+                        <input class="txtInput" type="text" name="phone" id="phone" placeholder="Nhập vào số điện thoại (9-10 số)">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td class="input">
+                        <input class="txtInput" type="text" name="email" id="email" placeholder="Nhập vào Email cá nhân theo dạng ten@tencongty.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="input-btn">
+                        <input type="button" value="Đăng ký"> 
+                        <input type="button" value="Hủy">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="../../bootsrap/js/jquery.min.js"></script>
+    <script src="../../bootsrap/js/popper.min.js"></script>
+    <script src="../../bootsrap/js/bootstrap.min.js"></script>
+</body>
+    
+</html>

@@ -1,0 +1,49 @@
+. {
+  margin: 0 auto;
+  padding: 1px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+  width: 55%;
+  padding: 2px;
+}
+div {
+  background-color: white;
+}
+
+.images {
+  width: 100px;
+  height: 90px;
+}
+
+#image2{
+  float: left;
+}
+
+#div-text2{
+  float: right;
+  margin: 35px 24px 0 0;
+}
+
+.clear{
+  clear: both;
+}
+
+#span-image3-2{
+  float: right;
+  margin-right: 22px;
+}
+
+#div-text4{
+  float: left;
+  width: 85%;
+}
+
+#image5{
+  float: left;
+}
+
+#p-text5{
+  padding-bottom: 20px;
+}
