@@ -1,0 +1,10 @@
+body{
+    width: 35%;
+    background-color: #f1f1f1;
+}
+
+div {
+    background-color: white;
+    /* top right bottom left */
+    padding: 0px 0px 5px 3px;
+}

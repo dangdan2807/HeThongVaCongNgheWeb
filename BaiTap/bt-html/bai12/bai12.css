@@ -1,0 +1,15 @@
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+form {
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+}

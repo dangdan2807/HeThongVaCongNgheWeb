@@ -1,0 +1,15 @@
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+div {
+    background-color: white;
+    width: 550px;
+    padding: 1px 10px 10px 15px;
+}
