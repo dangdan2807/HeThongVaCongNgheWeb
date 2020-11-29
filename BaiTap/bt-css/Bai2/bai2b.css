@@ -1,0 +1,104 @@
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+div {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#content {
+    width: 30%;
+    border: 1px solid;
+    text-align: center;
+}
+
+#content2 {
+    width: 30%;
+    background-color: #be2edd;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+#divID1 {
+    text-shadow: 0 6px 2px #85c226,
+        -3px -5px 2px #fe2192,
+        3px -5px 2px #f7c200;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#divID2 {
+    padding: 0px 10px 0px 10px;
+    color: #be2edd;
+    background-color: #ff9ff3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#divID3 {
+    text-shadow: 0px -15px 1px #e84393;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#divID4 {
+    position: relative;
+    font-weight: bold;
+    color: orange;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#divID4_span {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    z-index: 21;
+    /* background: url('../../images/bt-css/glossy.png'); */
+    background: linear-gradient(white, rgb(255, 255, 255));
+    opacity: 0.5;
+}
+
+#divID5 {
+    position: relative;
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+#divID5_span {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 115px;
+    width: 44%;
+    height: 100%;
+    z-index: 21;
+    background: url('../../images/bt-css/grunge.png');
+}
+
+#divID6 {
+    background-color: #130f40;
+    color: #17D4FE;
+    text-shadow: 0px 0px 7px #22a6b3, -1px -1px 7px #22a6b3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

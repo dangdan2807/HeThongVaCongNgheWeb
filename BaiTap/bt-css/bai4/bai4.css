@@ -1,0 +1,61 @@
+* {
+    padding: 1px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 50%;
+    background-color: white;
+}
+
+.p {
+    color: #993738;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.tab{
+    background-color: #993738;
+    border-spacing: 1px;
+}
+
+.tab__tr__th--color {
+    color: white;
+    background-color: #993738;
+}
+
+.tab__tr__th--align-left {
+    padding: 1px 0 1px 5px;
+    text-align: left;
+    width: 200px;
+}
+
+.tab__tr__th--align-right {
+    text-align: right;
+    width: 120px;
+    padding: 1px 5px 1px 0;
+}
+
+.tab__tr__td--align-left {
+    text-align: left;
+    padding: 1px 0 1px 5px;
+}
+
+.tab__tr__td--align-right {
+    text-align: right;
+    padding: 1px 5px 1px 0;
+}
+
+.tab__tr__td--even {
+    background-color: white;
+}
+
+.tab__tr__td--odd {
+    background-color: #ccc;
+}

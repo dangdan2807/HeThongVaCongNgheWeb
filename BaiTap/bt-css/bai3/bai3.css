@@ -1,0 +1,44 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container-1, .container-2 {
+    background-color: white;
+    width: 50%;
+}
+
+.tab {
+    border: 1px solid white;
+}
+
+.tab__colGr__col1--background {
+    background-color: blue;
+}
+
+.tab__colGr__col2--background {
+    background-color: green;
+}
+
+.tab__colGr__col3--background {
+    background-color: pink;
+}
+
+.tab__tr__th {
+    background-color: #f1f1f1;
+    padding: 0px 2px 0px 2px;
+}
+
+.tab__tr--background
+{
+    background-color: #f1f1f1;
+}
+
+.container-2__tab__colGr__col--background {
+    background-color: white;
+}
