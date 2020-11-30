@@ -1,0 +1,25 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container, .row::after {
+    display: table;
+    content: "";
+}
+
+.row::after {
+    clear: both;
+}
+
+.col1, .col2, .col3 {
+    float: left;
+    width: 25.333333333%;
+    margin: 1%;
+    padding: 1%;
+}

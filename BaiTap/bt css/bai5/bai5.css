@@ -1,0 +1,16 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    height: 310px;
+    background-image: url("../../ami-bung-bu/no.gif"), url("../../ami-bung-bu/xiu.gif");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+}

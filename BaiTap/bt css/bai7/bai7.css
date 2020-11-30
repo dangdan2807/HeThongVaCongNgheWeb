@@ -1,0 +1,40 @@
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+}
+
+.newspaper {
+    /* setting số cột */
+    -webkit-column-count: 3;
+    -moz-columns-count: 3;
+    column-count: 3;
+
+    /* setting chiều dài từng cột */
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+
+    -webkit-column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    column-rule-style: solid;
+
+    -webkit-column-rule-width: 1px;
+    -moz-column-rule-width: 1px;
+    column-rule-width: 1px;
+
+    /* setting màu */
+    -webkit-column-rule-color: lightblue;
+    -moz-column-rule-color: lightblue;
+    column-rule-color: lightblue;
+}
