@@ -1,0 +1,36 @@
+* {
+    margin: 0 auto;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+.div--transform {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.div--box-shadow {
+    box-shadow: 0px 0px 18px black;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 99%;
+    background-color: green;
+    color: white;
+    padding: 0px;
+}
