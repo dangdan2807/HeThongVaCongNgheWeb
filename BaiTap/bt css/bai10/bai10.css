@@ -1,0 +1,90 @@
+* {
+    margin: 0 auto;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+.div--transform {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    /* left: 50%; */
+    /* top: 50%; */
+}
+
+.div--box-shadow {
+    box-shadow: 0px 0px 18px black;
+}
+
+.div--animation {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 50%;
+    background: #ffcc00;
+}
+
+div {
+    -webkit-animation-name: scroll;
+    -moz-animation-name: scroll;
+    -o-animation-name: scroll;
+    animation-name: scroll;
+
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes scroll {
+    to {
+        left: 100%;
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@-moz-keyframes scroll {
+    to {
+        left: 100%;
+        -moz-transform: rotate(180deg);
+    }
+}
+
+@-o-keyframes scroll {
+    to {
+        left: 100%;
+        -o-transform: rotate(180deg);
+    }
+}
+@keyframes scroll {
+    to {
+        left: 100%;
+        transform: rotate(180deg);
+    }
+}
+
