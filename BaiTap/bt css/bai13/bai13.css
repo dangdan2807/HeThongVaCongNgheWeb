@@ -1,0 +1,44 @@
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    background-color: white;
+    width: 60%;
+}
+
+.div--box-shadow {
+    box-shadow: 0 0 18px black;
+}
+
+.div--transform {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.tab {
+    border-spacing: 10px;
+}
+
+.tab__tr__td {
+    border: 2px solid blue;
+    text-align: center;
+}
+
+.tab__tr__td__img:hover {
+    transition: transform 0.2s;
+    transform: scale(1.5);
+}
+
+.tab__tr__td__img {
+    width: 130px;
+    height: 130px;
+}
