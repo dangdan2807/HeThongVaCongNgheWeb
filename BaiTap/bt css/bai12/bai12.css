@@ -1,0 +1,65 @@
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 50%;
+    background-color: white;
+    padding: 15px 5px 15px 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container--transform {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 50%;
+}
+
+.container--shadow {
+    box-shadow: 0 0 18px black;
+}
+
+.div__h1 {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.ribbon {
+    width: 220px;
+    padding: 16px 25px 16px 25px;
+    position: absolute;
+    text-align: center;
+}
+
+.ribbon--sticky {
+    position: fixed;
+}
+
+.ribbon--top {
+    top: 35px;
+}
+
+.ribbon--left {
+    left: -49px;
+}
+
+.ribbon--top.ribbon--left {
+    transform: rotate(-45deg);
+}
+
+.ribbon--color {
+    color: white;
+    background-color: #cc3333;
+    -webkit-box-shadow: 0 0 10px #888888;
+    -moz-box-shadow: 0 0 10px #888888;
+    -ms-box-shadow: 0 0 10px #888888;
+    -o-box-shadow: 0 0 10px #888888;
+    box-shadow: 0 0 10px #888888;
+}
