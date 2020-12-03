@@ -1,0 +1,212 @@
+* {
+  margin: 0 auto;
+  padding: 0 1px 0 1px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cccccc;
+  width: 900px;
+  padding: 1px;
+  border: 0 1px 0 1px solid red;
+}
+
+div.container {
+  background-color: white;
+  height: 100%;
+}
+/* ==================================== */
+
+header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+header a {
+  font-size: 37px;
+  font-weight: bolder;
+  color: #555555;
+  text-decoration: none;
+}
+
+header p {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+header span {
+  color: #4caf50;
+}
+
+/* ===================================== */
+nav.hor {
+  width: 100%;
+  line-height: 40px;
+  background-color: #555555;
+  font-size: 17px;
+  height: 40px;
+  text-align: start;
+}
+
+nav.hor ul.cap1 > li {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bolder;
+  height: 40px;
+  padding: 0px 5px 0px 6px;
+}
+
+nav.hor .cap1 .cap2 {
+  display: none;
+}
+
+nav.hor .cap1 > li:hover .cap2 {
+  position: absolute;
+  display: block;
+}
+
+nav.hor .cap1 > li:hover {
+  background-color: #4caf50;
+}
+
+nav.hor ul.cap1 li a > i.la-globe {
+  font-size: 24px;
+}
+
+nav.hor ul.cap1 li > i.la-search {
+  font-size: 24px;
+  color: white;
+}
+
+nav.hor .cap1 .cap2 > li {
+  list-style-type: none;
+  text-align: center;
+  width: 140px;
+  background-color: #555;
+}
+
+nav.hor ul.cap1 .cap2 > li:hover {
+  background-color: #4caf50;
+  color: blue;
+}
+
+nav.hor ul.cap1 .cap2 > li > form > input#input-text {
+  width: 90px;
+  height: 20px;
+}
+
+nav.hor a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* ================================== */
+nav.ver {
+  float: left;
+  width: 30%;
+  background-color: #f1f1f1;
+}
+
+nav.ver h2 {
+  font-size: 21px;
+  text-align: start;
+  padding: 5px;
+  line-height: 31px;
+  padding-left: 15px;
+}
+
+nav.ver ul {
+  list-style-type: none;
+}
+
+nav.ver ul.cap1 > li {
+  font-size: 15px;
+  line-height: 22px;
+  padding-left: 15px;
+  padding: 2px 0 2px 15px;
+}
+
+nav.ver ul.cap1 > li:hover {
+  font-weight: bolder;
+  background-color: #cccccc;
+}
+
+nav.ver a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav.ver ul.cap1 > li:active {
+  background-color: #4caf50;
+}
+
+/* ====================================== */
+section {
+  float: left;
+  width: 70%;
+  background-color: white;
+}
+
+section article {
+  padding: 15px;
+}
+
+section article.banner img {
+  width: 100%;
+  height: 130px;
+  padding-bottom: 15px;
+}
+
+section article.banner h1 {
+  font-size: 42px;
+  padding-bottom: 10px;
+}
+
+section article.banner nav.btnChuyenTrang > a {
+  color: #4caf50;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+section article.banner nav.btnChuyenTrang > a#btnLeft {
+  float: left;
+}
+
+section article.banner nav.btnChuyenTrang > a#btnRight {
+  float: right;
+}
+section article#noidung1 {
+  border-bottom: 1px solid #000000;
+}
+
+section article.noidung1 img {
+  width: 25%;
+  float: left;
+}
+
+section article.noidung1 span {
+  width: 70%;
+  float: right;
+}
+
+section article.noidung1 div.clear {
+  clear: both;
+}
+
+section article.noidung2 {
+  border-top: 1px solid grey;
+}
+
+section article.noidung2 > h2 {
+  font-size: 42px;
+}
+/* ===================================== */
+footer {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  border-top: 3px solid black;
+}

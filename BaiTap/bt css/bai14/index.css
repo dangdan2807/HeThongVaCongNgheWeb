@@ -1,0 +1,58 @@
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    background-color: white;
+    width: 90%;
+    height: 100%;
+}
+
+.div--box-shadow {
+    box-shadow: 0 0 18px black;
+}
+
+.div--transform {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.transition {
+    width: 300px;
+    height: 170px;
+    background-color: #6FAC21;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: all 2s linear;
+    text-align: justify;
+    border-style: double dashed double dashed;
+    border-color: red;
+    border-width: 5px;
+    margin-top: 20%;
+}
+
+.transition:hover {
+    -webkit-transform: scale(2) rotate(360deg);
+    -moz-transform: scale(2) rotate(360deg);
+    -ms-transform: scale(2) rotate(360deg);
+    -o-transform: scale(2) rotate(360deg);
+    transform: scale(2) rotate(360deg);
+    opacity: 0.8;
+    background: #1EC7E6;
+}
+
+#transition {
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    transform: all 2s;
+    line-height: 16px;
+}

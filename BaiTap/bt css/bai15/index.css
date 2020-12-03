@@ -1,0 +1,40 @@
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    background-color: white;
+}
+
+.div__shadow {
+    box-shadow: 0 0 18px black;
+}
+
+.div__transform {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.div__form__input {
+    width: 100px;
+    -webkit-transition: width .35 ease-in-out;
+    -moz-transition: width .35 ease-in-out;
+    -ms-transition: width .35 ease-in-out;
+    -o-transition: width .35 ease-in-out;
+    transition: width .35 ease-in-out;
+}
+
+.div__form__input:focus {
+    width: 250px;
+    background-color: lightgreen;
+}
