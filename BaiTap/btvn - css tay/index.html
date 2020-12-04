@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bài Tập Về Nhà</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" href="../svg/font-awesome/css/all.css" />
+        <link rel="stylesheet" href="../bootsrap/css/bootstrap.min.css" />
+
+        <script src="index.js" language="Javascript" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div id="content" class="container">
+            <header>
+                <p>Bài Tập Tổng Hợp Về Nhà</p>
+            </header>
+            <nav>
+                <ul class="cap1">
+                    <li><a href="#">Trang Chu</a></li>
+                    <li><a href="#">San Pham</a></li>
+                    <li><a href="#">Dich vu</a></li>
+                    <li><a href="#">Lien He</a></li>
+                </ul>
+            </nav>
+            <section>
+                <form action="#" id="frm">
+                    <table id="table-form">
+                        <!-- Name -->
+                        <tr>
+                            <td><label for="name">Name</label></td>
+                            <td>
+                                <input class="text-input" type="text" name="name" id="name" value="" placeholder="Ho Ten" onblur="checkName();" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="skip"></label></td>
+                            <td><span id="error1">(*)</span><br /></td>
+                        </tr>
+                        <!-- Email -->
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td><input class="text-input" type="text" name="email" id="email" placeholder="Email" onblur="checkMail();" /><br /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="skip"></label></td>
+                            <td><span id="error2">(*)</span><br /></td>
+                        </tr>
+                        <!-- Number card -->
+                        <tr>
+                            <td><label for="numberCard">Number Card</label></td>
+                            <td>
+                                <input class="text-input" type="text" name="numberCard" id="numberCard" placeholder="XXXX-XXXX-XXXX-XXXX" onblur="checkNumberCard();" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="skip"></label></td>
+                            <td><span id="error3">(*)</span><br /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lop">Lop</label></td>
+                            <td>
+                                <select class="text-input" name="listSelect" id="listSelect">
+                                    <option value="Hoa Hong">Hoa Hong</option>
+                                    <option value="Hoa Cuc">Hoa Cuc</option>
+                                    <option value="Hoa Ly">Hoa Ly</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="tdDisabled"><label for="skip"></label></td>
+                            <td id="tdDisabled">
+                                <input class="text-input" type="text" name="txtDisable" id="txtDisable" disabled="disabled" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="loai">Loai</label></td>
+                            <td><input type="radio" name="loai" id="loai" value="Thuc Hanh" />Thuc Hanh <input type="radio" name="loai" id="loai" value="Ly Thuyet" />Ly Thuyet</td>
+                        </tr>
+                        <tr>
+                            <td><label for="language">Ngon Ngu</label></td>
+                            <td>
+                                <input type="checkbox" name="languageEnglish" id="language" value="English" />English
+                                <input type="checkbox" name="languageFrench" id="language" value="French" />French
+                                <input type="checkbox" name="languageChina" id="language" value="China" />China
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="skip"></label></td>
+                            <td>
+                                <input type="button" value="Dang Ky" id="btn-DangKy" onclick="DangKy();" disabled="disabled" />
+                            </td>
+                        </tr>
+                    </table>
+                    <hr />
+                </form>
+                <table id="table-showInfo">
+                    <tr>
+                        <th>STT</th>
+                        <th>Name</th>
+                        <th>Mail</th>
+                        <th>Card</th>
+                        <th>Loai</th>
+                        <th>Hoa</th>
+                        <th>Ngon Ngu</th>
+                    </tr>
+                </table>
+            </section>
+            <aside>
+                <img src="../images/image-3.jpg" alt="image" />
+                <p>Gia:</p>
+            </aside>
+            <div class="clear"></div>
+            <footer></footer>
+        </div>
+
+        <script src="../bootsrap/js/jquery.min.js"></script>
+        <script src="../bootsrap/js/popper.min.js"></script>
+        <script src="../bootsrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,152 +1,157 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bài Tập Về Nhà - bootstrap 3 Model</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="stylesheet" href="../FrameWork/bootstrap-3.3.7/css/bootstrap.min.css" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bài Tập Về Nhà - bootstrap 3 Model</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" href="../FrameWork/bootstrap-3.3.7/css/bootstrap.min.css" />
 
-    <script src="index.js" language="Javascript" type="text/javascript"></script>
-    <script src="../FrameWork/bootstrap-3.3.7/js/jquery.min.js"></script>
-    <script src="../FrameWork/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-  </head>
+        <script src="index.js" language="Javascript" type="text/javascript"></script>
+        <script src="../FrameWork/bootstrap-3.3.7/js/jquery.min.js"></script>
+        <script src="../FrameWork/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    </head>
 
-  <body>
-    <div id="content" class="container">
-      <header>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h2>B13 B14 B15 B16</h2>
-        </div>
-      </header>
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 3<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Page 3-1</a></li>
-                <li><a href="#">Page 3-2</a></li>
-                <li><a href="#">Page 3-3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Page 4</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="row">
-        <!-- MENU Left-->
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 left">Left</div>
-        <!-- Than Trang - O giua-->
-        <section class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-            <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Đăng Ký Online</button>
-          </div>
-
-          <!-- Modal -->
-          <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h3 class="modal-title">Form Dang Ky Online</h3>
+    <body>
+        <div id="content" class="container">
+            <header>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2>B13 B14 B15 B16</h2>
                 </div>
-                <div class="modal-body">
-                  <form action="#" id="frm">
-                    <!-- Name -->
-                    <div class="form-horizontal container-fluid">
-                      <label for="name" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3">Name:</label>
-                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Ho Ten" onblur="checkName();" />
-                      </div>
-                      <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></span>
-                      <span class="col-lg-9 col-md-9 col-sm-9 col-xs-9 error" id="error1">(*)</span>
-                    </div>
-                    <!-- Ngay sinh -->
-                    <div class="form-horizontal container-fluid">
-                      <label for="birth" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3">Ngay Sinh:</label>
-                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                        <input type="date" name="birth" id="birth" onblur="checkBirth();" />
-                      </div>
-                      <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></span>
-                      <span class="col-lg-9 col-md-9 col-sm-9 col-xs-9 error" id="error2">(*)</span>
-                    </div>
-                    <!-- Gender -->
-                    <div class="form-horizontal container-fluid">
-                      <label for="gender" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3">Gioi tinh:</label>
-                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                        <label for="gender" class="radio-inline"> <input type="radio" name="gender" id="gender" value="Nam" />Nam </label>
-                        <label for="gender" class="radio-inline"> <input type="radio" name="gender" id="gender" value="Nu" />Nữ </label>
-                      </div>
-                    </div>
-                    <!-- language -->
-                    <div class="form-horizontal container-fluid">
-                      <label for="language" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3">Ngon Ngu</label>
-                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                        <label for="language" class="checkbox-inline">
-                          <input type="checkbox" name="languageEnglish" id="language" value="Anh" />Anh
-                        </label>
-                        <label for="language" class="checkbox-inline">
-                          <input type="checkbox" name="languageFrench" id="language" value="Phap" />Phap
-                        </label>
-                        <label for="language" class="checkbox-inline">
-                          <input type="checkbox" name="languageChinese" id="language" value="Trung" />Trung
-                        </label>
-                      </div>
-                    </div>
-                    <!-- Mon hoc -->
-                    <div class="form-horizontal container-fluid">
-                      <label for="monHoc" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3">Mon hoc:</label>
-                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                        <select class="form-control" name="monHoc" id="monHoc" onchange="changeDis();">
-                          <option value="LTHDT">LTHDT</option>
-                          <option value="LTHDT2">LTHDT2</option>
-                          <option value="LTHDT3">LTHDT3</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="form-horizontal container-fluid inputDisabled">
-                      <label for="disInput" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3"></label>
-                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                        <input type="text" class="form-control" name="disInput" id="disInput" placeholder="1" disabled value="1" onchange="changeDis();"/>
-                      </div>
+            </header>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 3<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Page 3-1</a></li>
+                                <li><a href="#">Page 3-2</a></li>
+                                <li><a href="#">Page 3-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Page 4</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <!-- MENU Left-->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 left">Left</div>
+                <!-- Than Trang - O giua-->
+                <section class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Đăng Ký Online</button>
                     </div>
 
-                    <div class="form-horizontal container-fluid text-center">
-                      <input class="btn btn-DangKy text-center btn-primary" id="btn-DangKy" type="button" value="Dang Ky" onclick="DangKy();" />
+                    <!-- Modal -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h3 class="modal-title">Form Dang Ky Online</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="#" id="frm">
+                                        <!-- Name -->
+                                        <div class="form-horizontal container-fluid">
+                                            <label for="name" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3">Name:</label>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                                <input type="text" class="form-control" name="name" id="name" value="" placeholder="Ho Ten" onblur="checkName();" />
+                                            </div>
+                                            <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></span>
+                                            <span class="col-lg-9 col-md-9 col-sm-9 col-xs-9 error" id="error1">(*)</span>
+                                        </div>
+                                        <!-- Ngay sinh -->
+                                        <div class="form-horizontal container-fluid">
+                                            <label for="birth" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3">Ngay Sinh:</label>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                                <input type="date" name="birth" id="birth" value="0001-01-01" onblur="checkBirth();" />
+                                            </div>
+                                            <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></span>
+                                            <span class="col-lg-9 col-md-9 col-sm-9 col-xs-9 error" id="error2">(*)</span>
+                                        </div>
+                                        <!-- Gender -->
+                                        <div class="form-horizontal container-fluid">
+                                            <label for="gender" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3">Gioi tinh:</label>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                                <label for="gender" class="radio-inline"> <input type="radio" name="gender" id="gender" value="Nam" />Nam </label>
+                                                <label for="gender" class="radio-inline"> <input type="radio" name="gender" id="gender" value="Nu" />Nữ </label>
+                                            </div>
+                                        </div>
+                                        <!-- language -->
+                                        <div class="form-horizontal container-fluid">
+                                            <label for="language" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3">Ngon Ngu</label>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                                <label for="language" class="checkbox-inline">
+                                                    <input type="checkbox" name="languageEnglish" id="language" value="Anh" />Anh
+                                                </label>
+                                                <label for="language" class="checkbox-inline">
+                                                    <input type="checkbox" name="languageFrench" id="language" value="Phap" />Phap
+                                                </label>
+                                                <label for="language" class="checkbox-inline">
+                                                    <input type="checkbox" name="languageChinese" id="language" value="Trung" />Trung
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- Mon hoc -->
+                                        <div class="form-horizontal container-fluid">
+                                            <label for="monHoc" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3">Mon hoc:</label>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                                <select class="form-control" name="monHoc" id="monHoc" onchange="changeDis();">
+                                                    <option value="LTHDT">LTHDT</option>
+                                                    <option value="LTHDT2">LTHDT2</option>
+                                                    <option value="LTHDT3">LTHDT3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-horizontal container-fluid inputDisabled">
+                                            <label for="disInput" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3"></label>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                                <input type="text" class="form-control" name="disInput" id="disInput" placeholder="1" disabled value="1" onchange="changeDis();" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-horizontal container-fluid text-center">
+                                            <input
+                                                class="btn btn-DangKy text-center btn-primary"
+                                                id="btn-DangKy"
+                                                type="button"
+                                                value="Dang Ky"
+                                                disabled="disabled"
+                                                onclick="DangKy();"
+                                            />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
+                    <!-- Table info -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <table class="table table-striped table-responsive" id="table">
+                            <th>Name</th>
+                            <th>Ngay Sinh</th>
+                            <th>Gioi tinh</th>
+                            <th>Ngon Ngu</th>
+                            <th>Mon</th>
+                        </table>
+                    </div>
+                </section>
+                <!-- aside right -->
+                <aside class="col-lg-3 col-md-3 col-sm-3 col-xs-3 right">Right</aside>
             </div>
-          </div>
-          <!-- Table info -->
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <table class="table table-striped table-responsive" id="table">
-              <th>Name</th>
-              <th>Ngay Sinh</th>
-              <th>Gioi tinh</th>
-              <th>Ngon Ngu</th>
-              <th>Mon</th>
-            </table>
-          </div>
-        </section>
-        <!-- aside right -->
-        <aside class="col-lg-3 col-md-3 col-sm-3 col-xs-3 right">
-          Right
-        </aside>
-      </div>
-      <div class="row">
-        <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <p>Logo</p>
-        </footer>
-      </div>
-    </div>
-  </body>
+            <div class="row">
+                <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>Logo</p>
+                </footer>
+            </div>
+        </div>
+    </body>
 </html>
