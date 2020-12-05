@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 20%;
+    background-color: white;
+}
+
+.div__shadow {
+    box-shadow: 0 0 18px black;
+}
+
+/* canh trang web ở giũa màng hình */
+.div__transform {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== Menu ===== */
+.div__nav-list-items,
+.subMenu-list-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.div__nav-item,
+.subMenu-item {
+    width: 125px;
+    padding: 5px;
+    margin: 5px;
+    background: #0d90df;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.3em;
+    box-shadow: 0 0 0 4px #0d90df, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    text-shadow: -1px -1px #aa3030;
+    text-align: center;
+}
+
+.div__nav-item--border,
+.subMenu-item--border {
+    border: 2px dashed white;
+    border-radius: 10px;
+}
+
+.div__nav-item:hover,
+.subMenu-item:hover {
+    background-color: #2ecc71;
+}
+
+.div__nav-item a,
+.subMenu-item a {
+    color: white;
+}
+
+/* ===== Drop Menu ===== */
+
+.subMenu-list-items {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.div__nav li {
+    position: relative;
+}
+
+.div__nav-item:hover .subMenu-list-items {
+    display: block;
+}
