@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Free Web tutorials" />
+        <meta name="keywords" content="HTML, CSS, XML, Javascript" />
+        <meta name="author" content="Here Refines" />
+        <title>Bai 4</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <script type="text/javascript" language="javascript">
+            var d = new Date();
+            var namSinh, namHienTai;
+            namHienTai = d.getFullYear();
+            do {
+                namSinh = prompt("Nhập năm sinh: ", "");
+            } while (parseInt(namSinh) > namHienTai || parseInt(namSinh) < 0);
+            var tuoi = parseInt(namHienTai) - parseInt(namSinh);
+            document.write("Tuổi của bạn hiện bạn là: " + tuoi);
+        </script>
+    </head>
+
+    <body>
+        <div id="content" class="container"></div>
+    </body>
+</html>
