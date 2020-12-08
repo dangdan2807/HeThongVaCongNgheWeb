@@ -1,100 +1,94 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bai tap</title>
+        <link rel="stylesheet" href="../CSS/index.css" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bai tap</title>
-    <link rel="stylesheet" href="../CSS/index.css">
+        <script src="../JS/index.js" language="Javascript" type="text/javascript"></script>
+        <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.min.css" />
 
-    <script src="../JS/index.js" language="Javascript" type="text/javascript"></script>
-    <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+        <!-- Latest compiled and minified JavaScript -->
 
+        <script src="../bootstrap-3.3.7/js/jquery.min.js"></script>
+        <script src="../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    </head>
 
-    <!-- Latest compiled and minified JavaScript -->
-
-    <script src="../bootstrap-3.3.7/js/jquery.min.js"></script>
-    <script src="../bootstrap-3.3.7/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    <div id="content" class="container">
-        <header>
-            <h2>DIEN LUC THANH PHO HO CHI MINH</h2>
-            <h3>PHIEU DONG TIEN ONLINE</h3>
-        </header>
-        <div class="row">
-            <div class="left col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <aside class="row">left</aside>
-            </div>
-            <section class="right col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                <div class="container-fluid">
-                    <form action="#" id="frm">
-                        <div class="form-group">
-                            <label for="maSoDongHoDien">Ma So Dong Ho Dien:</label>
-                            <input class="form-control" type="text" name="maSoSongHoDien" id="maSoSongHoDien" placeholder="Ma So Dong Ho" onblur="checkSoDongHo();">
-                            <span id="error-maSo" class="error">(*)</span>
-                        </div>
-                        <div class="form-group">
-                            <label for="month">Thang:</label>
-                            <select name="month" id="month" class="month form-control" onblur="checkMonth();">
-                                <option value="1">Thang 1</option>
-                                <option value="2">Thang 2</option>
-                                <option value="3">Thang 3</option>
-                                <option value="4">Thang 4</option>
-                                <option value="5">Thang 5</option>
-                                <option value="6">Thang 6</option>
-                                <option value="7">Thang 7</option>
-                                <option value="8">Thang 8</option>
-                                <option value="9">Thang 9</option>
-                                <option value="10">Thang 10</option>
-                                <option value="11">Thang 11</option>
-                                <option value="12">Thang 12</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="soTien">So Tien:</label>
-                            <input class="form-control" type="text" name="soTien" id="soTien" placeholder="So Tien" onblur="checkSoTien();">
-                            <span id="error-soTien" class="error">(*)</span>
-                        </div>
-                        <div class="form-group row">
-                            <label for="loaiHinh" class="control-label loaiHinh col-lg-2 col-md-2 col-sm-2 col-xs-2">Loai Hinh:</label>
-                            <label for="loaiHinh" class="radio-inline col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <input type="radio" name="loaiHinh" id="loaiHinh" value="Ho gia dinh"> Ho gia dinh
-                            </label>
-                            <label for="loaiHinh" class="radio-inline col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                <input type="radio" name="loaiHinh" id="loaiHinh" value="Doanh nghiep"> Doanh nghiep
-                            </label>
-                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="khuVuc">Khu Vuc:</label>
-                            <select name="khuVuc" id="khuVuc" class="form-control" onchange="changeKV();">
-                                <option value="1">Khu Vuc 1</option>
-                                <option value="2">Khu Vuc 2</option>
-                                <option value="3">Khu Vuc 3</option>
-                            </select>
-                        </div>
-                        <div class="form-group" >
-                            <input type="text" name="giamGia" id="giamGia" class="form-control" value="10%" disabled="disabled">
-                        </div>
-                        <div class="form-group">
-                            <input type="button" value="Dong" class="btn btn-info" id="btn-dong" onclick="dangky();">
-                        </div>
-                    </form>
-                    <table class="table table-striped table-responsive" id="table">
-                        <th>Ma so dong ho diem</th>
-                        <th>Thang</th>
-                        <th>Loai Hinh</th>
-                        <th>Tong tien dong</th>
-                    </table>
+    <body>
+        <div id="content" class="container">
+            <header>
+                <h2>DIEN LUC THANH PHO HO CHI MINH</h2>
+                <h3>PHIEU DONG TIEN ONLINE</h3>
+            </header>
+            <div class="row">
+                <div class="left col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <aside class="row">left</aside>
                 </div>
-            </section>
+                <section class="right col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <div class="container-fluid">
+                        <form action="#" id="frm">
+                            <div class="form-group">
+                                <label for="maSoDongHoDien">Ma So Dong Ho Dien:</label>
+                                <input class="form-control" type="text" name="maSoSongHoDien" id="maSoSongHoDien" placeholder="Ma So Dong Ho" onblur="checkSoDongHo();" />
+                                <span id="error-maSo" class="error">(*)</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="month">Thang:</label>
+                                <select name="month" id="month" class="month form-control" onblur="checkMonth();">
+                                    <option value="1">Thang 1</option>
+                                    <option value="2">Thang 2</option>
+                                    <option value="3">Thang 3</option>
+                                    <option value="4">Thang 4</option>
+                                    <option value="5">Thang 5</option>
+                                    <option value="6">Thang 6</option>
+                                    <option value="7">Thang 7</option>
+                                    <option value="8">Thang 8</option>
+                                    <option value="9">Thang 9</option>
+                                    <option value="10">Thang 10</option>
+                                    <option value="11">Thang 11</option>
+                                    <option value="12">Thang 12</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="soTien">So Tien:</label>
+                                <input class="form-control" type="text" name="soTien" id="soTien" placeholder="So Tien" onblur="checkSoTien();" />
+                                <span id="error-soTien" class="error">(*)</span>
+                            </div>
+                            <div class="form-group row">
+                                <label for="loaiHinh" class="control-label loaiHinh col-lg-2 col-md-2 col-sm-2 col-xs-2">Loai Hinh:</label>
+                                <label for="loaiHinh" class="radio-inline col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                    <input type="radio" name="loaiHinh" id="loaiHinh" value="Ho gia dinh" checked/> Ho gia dinh
+                                </label>
+                                <label for="loaiHinh" class="radio-inline col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                    <input type="radio" name="loaiHinh" id="loaiHinh" value="Doanh nghiep" /> Doanh nghiep
+                                </label>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="khuVuc">Khu Vuc:</label>
+                                <select name="khuVuc" id="khuVuc" class="form-control" onchange="changeKV();">
+                                    <option value="1">Khu Vuc 1</option>
+                                    <option value="2">Khu Vuc 2</option>
+                                    <option value="3">Khu Vuc 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="giamGia" id="giamGia" class="form-control" value="10%" disabled="disabled" />
+                            </div>
+                            <div class="form-group">
+                                <input type="button" value="Dong" class="btn btn-info" id="btn-DangKy" onclick="DangKy();" />
+                            </div>
+                        </form>
+                        <table class="table table-striped table-responsive" id="table">
+                            <th>Ma so dong ho diem</th>
+                            <th>Thang</th>
+                            <th>Loai Hinh</th>
+                            <th>Tong tien dong</th>
+                        </table>
+                    </div>
+                </section>
+            </div>
         </div>
-        
-        
-        
-    </div>
-</body>
-    
+    </body>
 </html>
