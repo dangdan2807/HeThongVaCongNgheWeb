@@ -1,9 +1,53 @@
 * {
-  margin: 0 auto;
-  padding: 1px;
-  box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
+}
+
+.container {
+    background-color: white;
+    width: 30%;
+    min-height: 100px;
+    padding: 5px 5px 0px 5px;
+}
+
+.div--shadow {
+    box-shadow: 0 0 18px black;
+}
+
+.calculator__display {
+    width: 100%;
+}
+
+.calculator__display input {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0 0 0;
+    text-align: right;
+    padding: 0 2px 0 0; 
+}
+
+div table {
+    border-spacing: 5px;
+}
+
+div table tr {
+    width: 100%;
+}
+
+div table tr td {
+    width: 100px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+}
+
+.key--equal {
+    height: 213px;
 }

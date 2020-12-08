@@ -1,42 +1,42 @@
 * {
-  margin: 0 auto;
-  padding: 1px;
-  box-sizing: border-box;
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
 }
 body {
-  background-color: #ccc;
+    background-color: #ccc;
 }
 
-div.clear{
-  clear: both;
+div.clear {
+    clear: both;
 }
 
-div.container{
-  width: 700px;
-  height: 700px;
-  background-color: white;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  left: 50%;
-  top: 50%;
+div.container {
+    width: 800px;
+    height: 650px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }
 
-img{
-  width: 600px;
-  height: 630px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+img {
+    width: 500px;
+    height: 530px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-div.btn{
-  width: 600px;
-  height: 100px;
-  display: block;
-  margin-left: 35%;
+div.btn {
+    width: 600px;
+    height: 100px;
+    display: block;
+    margin-left: 35%;
 }
 
-input{
-  padding: 10px;
-  font-size: 30px;
+input {
+    padding: 10px;
+    font-size: 30px;
 }
