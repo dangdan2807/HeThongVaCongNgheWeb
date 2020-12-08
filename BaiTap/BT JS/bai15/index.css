@@ -9,12 +9,8 @@ body {
 
 div.container{
   background-color: white;
-  left: 50%;
-  top: 50%;
-  position: absolute;
   width: 700px;
-  height: 700px;
-  transform: translate(-50%, -50%);
+  height: 500px;
   font-size: 30px;
 }
 
