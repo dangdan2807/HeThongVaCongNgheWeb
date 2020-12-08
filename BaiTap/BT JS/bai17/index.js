@@ -9,16 +9,18 @@ function check(loai){
     }
     else if(loai == 2) // check password
     {
-        re = /^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$/gm;
+        // mật khâu có tối thiểu 8 kí tự: có thể bao gồm các kí tự ngoài chữ như sau:
+        // @ # $ % ^ & * !
+        re = /^[\w-@#$%^&*!]{8,}$/gm;
         str = "Mat khau"; 
         x = document.getElementById("password").value;
         idError = "error2";
     }
     else if(loai == 4) // check name
     {
-        re = /^[A-Z][A-Za-z]{2,}/gm; // cua giao vien
-        // (([A-Za-z]*?){2,}) - kiểm chữ thường không viết hoa
-        //re = /(^([A-Z][A-Za-z]*?\s){2,})/gm;
+        // ví dụ đúng: Pham Dang Dan
+        // ví dụ sai: pham sang san
+        re = /(^([A-Z][A-Za-z]*?[\s]){2,})/gm;
         str = "Ho Ten"; 
         x = document.getElementById("name").value;
         idError = "error4";
@@ -37,9 +39,9 @@ function check(loai){
 
 function checkPassword(){
     var password = document.getElementById("password").value;
-    var repassword = document.getElementById("rePassword").value;
+    var rePassword = document.getElementById("rePassword").value;
     var idError = "error3";
-    if(repassword != password)
+    if(rePassword != password)
     {
         document.getElementById(idError).innerHTML = "Mat khau khong khop!!!";
         document.getElementById("btn-DangKy").disabled = true;
