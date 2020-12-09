@@ -1,13 +1,20 @@
 /* ten:                         
 /^([A-Z][A-Za-z]+[\s]*){1,}/gm
+
 sđt với đầu số 09 08 07: 	    
 /^0[7-9]\d{8}$/gm
+
 email: 							
-/[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/igm
+/[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/igm
+
 thẻ ngân hàng:					
 /^(\d{4}[-]*){4}$/gm
+
 địa chỉ: 	                    
 /^([A-Za-z0-9]+[\/\\,\- +]*){1,}/gm
+
+Mật khẩu: 
+/^[a-z0-9_-]{6,18}$/
 */
 function changeDis() {
     var getGiaTri = document.getElementById("monHoc").value;

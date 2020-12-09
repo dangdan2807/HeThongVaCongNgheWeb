@@ -21,7 +21,7 @@
                         </tr>
                         <tr>
                             <td><input type="text" name="user" id="user" /></td>
-                            <td><input type="text" name="password" id="password" /></td>
+                            <td><input type="text" name="password" id="password--login" /></td>
                             <td><input type="button" value="Đăng nhập" /></td>
                         </tr>
                         <tr>
@@ -34,7 +34,7 @@
             </header>
             <section>
                 <article id="art1">
-                    <img src="image-1.png" alt="image1" />
+                    <img src="image.png" alt="image1" />
                     <p>
                         <span id="dong1">Cảm ơn bạn</span><br />
                         <span id="dong2">đã ghé thăm!</span>
@@ -44,38 +44,19 @@
                     <p id="pad"></p>
                     <p id="dangKy">Đăng ký</p>
                     <p id="sologon">Miễn phí và sẽ luôn như vậy</p>
-                    <form action="#">
-                        <table class="form__tab">
-                            <tr>
-                                <td><input class="form__tab__input input--text-name" type="text" name="lastName" id="lastName" value="" placeholder="Họ" /></td>
-                                <td><input class="form__tab__input input--text-name" type="text" name="firstName" id="firstName" value="" placeholder="Tên" /></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <input class="form__tab__input input--text" type="text" name="email" id="email" value="" placeholder="Email đăng nhập" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <input class="form__tab__input input--text" type="text" name="reEmail" id="reEmail" value="" placeholder="Nhập lại Email" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <input class="form__tab__input input--text" type="password" name="password" id="password" value="" placeholder="Mật khẩu" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <input class="form__tab__input input--text" type="text" name="birth" id="birth" value="" placeholder="Năm Sinh" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input class="form__tab__input--btn" type="button" value="Đăng ký" />
-                                </td>
-                            </tr>
-                        </table>
+                    <form class="form" action="#">
+                        <input class="form__input" type="text" name="firstName" id="firstName" value="" placeholder="Họ" onblur="checkName(1);" />
+                        <input class="form__input" type="text" name="lastName" id="lastName" value="" placeholder="Tên" onblur="checkName(2);" />
+                        <br />
+                        <input class="form__input input-text" type="text" name="email" id="email" value="" placeholder="Email Đăng Nhập" onblur="checkEmail();check();" />
+                        <br />
+                        <input class="form__input input-text" type="text" name="reEmail" id="reEmail" value="" placeholder="Nhập lại Email" onblur="checkReEmail();check();" />
+                        <br />
+                        <input class="form__input input-text" type="password" name="password" id="password" value="" placeholder="Mật Khẩu" onblur="checkPassword();check();" />
+                        <br />
+                        <input class="form__input input-text" type="text" name="birthYear" id="birthYear" value="" placeholder="Năm Sinh" onblur="checkBirthYear();check();" />
+                        <br />
+                        <input class="form__input input--btn" type="button" value="Đăng Ký" id="btn-DangKy" disabled="disabled" onblur="DangKy();" />
                     </form>
                 </article>
             </section>
