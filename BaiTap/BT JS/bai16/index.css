@@ -12,10 +12,11 @@ div.container{
   left: 50%;
   top: 50%;
   position: absolute;
-  width: 700px;
-  height: 700px;
+  width: 800px;
+  height: 500px;
   transform: translate(-50%, -50%);
   font-size: 30px;
+  padding: 10px;
 }
 
 input{
