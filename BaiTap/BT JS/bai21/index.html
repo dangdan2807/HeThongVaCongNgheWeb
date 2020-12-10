@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js"></script>
+        <title>Bai 21</title>
+    </head>
+    <body>
+        <div id="content" class="container div--shadow div--transform">
+            <table class="table">
+                <tr class="table__tr">
+                    <th class="table__tr__th">STT</th>
+                    <th class="table__tr__th">Hình Ảnh</th>
+                    <th class="table__tr__th">Giá</th>
+                    <th class="table__tr__th">Số Lượng</th>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td table--stt">1</td>
+                    <td class="table__tr__td table--img">
+                        <img src="../../images/bt-css/bai21/anh1.jpg" alt="anh1" />
+                    </td>
+                    <td class="table__tr__td table--gia">
+                        <input class="input--gia" id="gia-1" type="number" value="20000" disabled="disabled" />
+                    </td>
+                    <td class="table__tr__td table--input">
+                        <input class="input--soluong" id="sl-1" type="number" min="0" value="0" onblur="tinhTien();" />
+                    </td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td table--stt">2</td>
+                    <td class="table__tr__td table--img">
+                        <img src="../../images/bt-css/bai21/anh2.jpg" alt="anh2" />
+                    </td>
+                    <td class="table__tr__td table--gia">
+                        <input class="input--gia" id="gia-2" type="number" value="40000" disabled="disabled" />
+                    </td>
+                    <td class="table__tr__td table--input">
+                        <input class="input--soluong" id="sl-2" type="number" min="0" value="0" onblur="tinhTien();"/>
+                    </td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td table--stt">3</td>
+                    <td class="table__tr__td table--img">
+                        <img src="../../images/bt-css/bai21/anh3.jpg" alt="anh3" />
+                    </td>
+                    <td class="table__tr__td table--gia">
+                        <input class="input--gia" id="gia-3" type="number" value="30000" disabled="disabled" />
+                    </td>
+                    <td class="table__tr__td table--input">
+                        <input class="input--soluong" id="sl-3" type="number" min="0" value="0" onblur="tinhTien();"/>
+                    </td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td table--stt">4</td>
+                    <td class="table__tr__td table--img">
+                        <img src="../../images/bt-css/bai21/anh4.jpg" alt="anh4" />
+                    </td>
+                    <td class="table__tr__td table--gia">
+                        <input class="input--gia" id="gia-4" type="number" value="50000" disabled="disabled" />
+                    </td>
+                    <td class="table__tr__td table--input">
+                        <input class="input--soluong" id="sl-4" type="number" min="0" value="0" onblur="tinhTien();"/>
+                    </td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td table--stt">5</td>
+                    <td class="table__tr__td table--img">
+                        <img src="../../images/bt-css/bai21/anh5.jpg" alt="anh5" />
+                    </td>
+                    <td class="table__tr__td table--gia">
+                        <input class="input--gia" id="gia-5" type="number" value="30000" disabled="disabled" />
+                    </td>
+                    <td class="table__tr__td table--input">
+                        <input class="input--soluong" id="sl-5" type="number" min="0" value="0" onblur="tinhTien();"/>
+                    </td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td"></td>
+                    <td class="table__tr__td"></td>
+                    <td class="table__tr__td">Tổng thành tiền</td>
+                    <td class="table__tr__td">
+                        <input class="input--gia" id="thanhTien" type="number" min="0" value="0" disabled="disabled"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
