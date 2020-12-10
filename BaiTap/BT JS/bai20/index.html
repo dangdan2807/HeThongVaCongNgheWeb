@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js"></script>
+        <title>Bai 20</title>
+    </head>
+    <body>
+        <div id="content" class="container div--shadow div--transform">
+            <form action="#" id="form" class="form">
+                <table class="form__table">
+                    <tr class="form__table__tr">
+                        <td class="form__table__tr__td"><label for="name">Họ Tên: </label></td>
+                        <td class="form__table__tr__td"><input class="input--name" type="text" name="name" id="name" onblur="checkName();" /></td>
+                    </tr>
+                    <tr class="form__table__tr">
+                        <td><label for="lop">Lớp: </label></td>
+                        <td class="form__table__tr__td">
+                            <select class="select--lop" name="lop" id="lop">
+                                <option value="Đại Học Kỹ Thuật Phần Mềm 9A">Đại Học Kỹ Thuật Phần Mềm 9A</option>
+                                <option value="Đại Học Kỹ Thuật Phần Mềm 9B">Đại Học Kỹ Thuật Phần Mềm 9B</option>
+                                <option value="Đại Học Kỹ Thuật Phần Mềm 9C">Đại Học Kỹ Thuật Phần Mềm 9C</option>
+                                <option value="Đại Học Kỹ Thuật Phần Mềm 9D">Đại Học Kỹ Thuật Phần Mềm 9D</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="form__table__tr">
+                        <td><label for="monHoc">Môn Học: </label></td>
+                        <td class="form__table__tr__td">
+                            <select class="select--monHoc" name="monHoc" id="monHoc">
+                                <option value="Lập Trình Hướng Đối Tượng">Lập Trình Hướng Đối Tượng</option>
+                                <option value="Lập Trình Hướng Sự Kiện">Lập Trình Hướng Sự Kiện</option>
+                                <option value="Lập Trình Phân Tán">Lập Trình Phân Tán</option>
+                                <option value="Nhập Môn Lập Trình">Nhập Môn Lập Trình</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="form__table__tr">
+                        <td><label for="loai">Loại: </label></td>
+                        <td class="form__table__tr__td">
+                            <input type="radio" name="loai" id="loai-lyThuyet" value="Lý Thuyết" />
+                            <label for="loai-lyThuyet"> Lý Thuyết</label>
+                            <input type="radio" name="loai" id="loai-thucHanh" value="Thực Hành" />
+                            <label for="loai-thucHanh"> Thực Hành</label>
+                        </td>
+                    </tr>
+                    <tr class="form__table__tr">
+                        <td class="form__table__tr__td"><input class="btn" type="button" value="Đăng Ký" id="btn-DangKy" disabled="disabled" onclick="DangKy();" /></td>
+                    </tr>
+                </table>
+            </form>
+            <br />
+            <table class="table" id="table">
+                <tr class="table__tr">
+                    <th class="table__tr__th">Họ Tên</th>
+                    <th class="table__tr__th">Lớp</th>
+                    <th class="table__tr__th">Môn Học Đăng Ký</th>
+                    <th class="table__tr__th">Loại</th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
